@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre Mendix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/descargar.png" alt="Logo de Mendix" class="logo">
+        <h1>Página sobre Mendix</h1>
+    </header>
+
+    <nav>
+        <a href="#mendix" onclick="mostrarSeccion('mendix')">¿Qué es Mendix?</a>
+        <a href="#ventajas" onclick="mostrarSeccion('ventajas')">Ventajas</a>
+        <a href="#casos" onclick="mostrarSeccion('casos')">Casos de uso</a>
+        <a href="#recursos" onclick="mostrarSeccion('recursos')">Recursos</a>
+        <a href="#desarrollador" onclick="mostrarSeccion('desarrollador')">Sobre el desarrollador</a>
+    </nav>
+
+    <!-- Sección 1 -->
+    <section id="mendix" class="active">
+        <h2>¿Qué es Mendix?</h2>
+        <p>
+            Mendix es una plataforma de desarrollo low-code habilitada para IA que permite crear aplicaciones web y móviles de manera rápida y eficiente.
+        </p>
+        <img src="img/mendix_logo.png" alt="Imagen representativa de Mendix" class="ilustracion">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/l3INGNE8xDw" title="Video sobre Mendix" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección 2 -->
+    <section id="ventajas">
+        <h2>Ventajas de trabajar con Mendix</h2>
+        <p>Mendix permite acelerar el desarrollo de software reduciendo costos y tiempo de entrega.</p>
+        <ul>
+            <li>Desarrollo rápido</li>
+            <li>Colaboración entre equipos</li>
+            <li>Escalabilidad</li>
+        </ul>
+        <img src="img/ventajas.png" alt="Ventajas de Mendix" class="ilustracion">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/t2kDAD4Srjs" title="Ventajas de Mendix" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="casos">
+        <h2>Casos de uso</h2>
+        <p>Mendix se utiliza en diversas industrias: manufactura, banca, energía, salud, entre otros.</p>
+        <ol>
+            <li>Siemens</li>
+            <li>Enexis</li>
+            <li>PwC</li>
+            <li>Car</li>
+        </ol>
+        <img src="img/casos.png" alt="Casos de uso" class="ilustracion">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/30DINd9MuAs" title="Casos de uso de Mendix" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección 4 -->
+    <section id="recursos">
+        <h2>Recursos de aprendizaje</h2>
+        <p>Uno de los recursos oficiales es <a href="http://academy.mendix.com/index3.html" target="_blank">Mendix Academy</a></p>
+        <ul>
+            <li><a href="https://www.igmguru.com/blog/mendix-tutorial">Recurso 1</a></li>
+            <li><a href="https://pretius.com/blog/mendix-tutorial">Recurso 2</a></li>
+        </ul>
+        <img src="img/recursos.png" alt="Recursos Mendix" class="ilustracion">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/X_1Bz-gT8Ao" title="Tutorial Mendix" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección 5: Datos del desarrollador -->
+    <section id="desarrollador">
+        <h2>Datos del desarrollador</h2>
+        <p><b>Nombre:</b> Halan Fernando Guerrero Rodriguez</p>
+        <p><b>Correo:</b> heartsmorning@gmail.com</p>
+        <p><b>Escuela:</b> Universidad Tecnologica del Norte de Guanajuato (UTNG)</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Proyecto académico sobre Mendix</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(id) {
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+</body>
+</html>

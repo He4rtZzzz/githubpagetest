@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    color: white;
+}
+
+header .logo {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Menú de navegación */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #00c6ff;
+    transform: scale(1.1);
+}
+
+/* Secciones */
+section {
+    display: none;
+    padding: 30px;
+    text-align: justify;
+    min-height: 80vh;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+h2 {
+    color: #222;
+}
+
+img.ilustracion {
+    display: block;
+    margin: 15px auto;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+img.perfil {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid #0072ff;
+}
+
+/* Fondos distintos */
+#mendix { background-color: #ffffff; }
+#ventajas { background-color: #fff7cc; }
+#casos { background-color: #d4f7d4; }
+#recursos { background-color: #f0f0f0; }
+#desarrollador { background-color: #e6f0ff; }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
